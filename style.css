@@ -1,0 +1,114 @@
+body {
+  background: #f0f0f0;
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: #fff;
+  border-radius: 24px 24px 200px 24px;
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 40px 32px 48px 32px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 32px;
+  color: #854dff;
+  font-weight: bold;
+}
+
+.inputs {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.input-group label {
+  font-size: 1.12rem;
+  letter-spacing: 2px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  padding: 12px;
+  font-size: 1.30rem;
+  border: 2px solid #d6d6d6;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #854dff;
+}
+
+button#calculate {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+}
+
+button#calculate:hover {
+  background: #854dff;
+}
+
+.result {
+  margin-top: 32px;
+  border-top: 1px solid #eee;
+  padding-top: 32px;
+}
+
+#ageResult {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333;
+}
+
+#ageResult .highlight {
+  color: #854dff;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 24px 8px;
+    max-width: 95vw;
+  }
+  .inputs {
+    gap: 8px;
+  }
+  button#calculate {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  #ageResult {
+    font-size: 1.5rem;
+  }
+}
